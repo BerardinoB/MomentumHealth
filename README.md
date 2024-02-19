@@ -14,3 +14,5 @@ This repository trains a Self Supervised Learning (SSL) model to classify [MNIST
 In "Package" you can find the train.py and test.py files for training and testing the model respectively. If you do not want to train the model from scratch you can find the weights of the classifier (i.e. encoder of the SSL model) in "checkpoint". I also provide a notebook on how to visualize some diagnostics of the training, such as train vs validation curves and %lables vs accuracy.
 
 ![alt text](https://github.com/BerardinoB/MomentumHealth/blob/main/Images/Image_Autoencoder.png)
+
+The SSL model is essentially a vanilla autoencoder that learns a latent representation of the input into the Z space, which represents the first stage of the model training. In the second stage, the encoder part acts as a classifier. Only the bottleneck (i.e last layer, i.e Z) will be used to fine-tune using up the 10% of the available label data. All the details of the model can be found in "Package/Utils.py"
