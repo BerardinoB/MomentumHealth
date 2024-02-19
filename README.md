@@ -1,7 +1,9 @@
 # MomentumHealth
 Challenge for MomentumHealth
 
-This repository trains a Self Supervised Learning (SSL) model to classify [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist/tree/master?tab=readme-ov-file) dataset into 10 different classes using only up to 10% of the label data.
+This repository trains a Self Supervised Learning (SSL) model to classify [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist/tree/master?tab=readme-ov-file) dataset into 10 different classes using only up to 10% of the label data. In the following a visualization of the data:
+
+![alt text](https://github.com/BerardinoB/MomentumHealth/blob/main/Images/fashionMNIST.png)
 
 # Requirements
 - numpy
@@ -20,6 +22,6 @@ You can have some flexibility in adjusting the N epochs and the device where the
 ![alt text](https://github.com/BerardinoB/MomentumHealth/blob/main/Images/Image_Autoencoder.png)
 
 The SSL model is essentially a vanilla autoencoder that learns a latent representation of the input into the Z space, which represents the first stage of the model training. In the second stage, the encoder part acts as a classifier. Only the bottleneck (i.e last layer, i.e Z) will be used to fine-tune using up the 10% of the available label data. All the details of the model can be found in "Package/Utils.py"
-I also provide the weights of the classifier (i.e. encoder) for each percentage of supervision from 1% to 10%. Have a look at the "checkpoint" folder. Plotting the performance for each percentage of labeled data (on the hold out test set) will produce the following plot
+I also provide the weights of the classifier (i.e. encoder) for each percentage of supervision from 1% to 10%. Have a look at the "checkpoint" folder. Plotting the performance for each percentage of labeled data (on the hold-out test set) will produce the following plot
 
-
+![alt text](https://github.com/BerardinoB/MomentumHealth/blob/main/Images/performance.png)
