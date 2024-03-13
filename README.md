@@ -1,7 +1,14 @@
-# MomentumHealth
-Challenge for MomentumHealth
+# Challenge
+**Task Description:** Using FashionMNIST, devise a pipeline that allows the classification of the 10 clothes classes, without using any labels or only a portion of them (up to 10%). Be specific in explaining which particular SSL methods you used, as well as the transformations applied with regard to the downstream task. As far as possible, try using PyTorch lightning or PyTorch for that purpose.
 
-This repository trains a Self Supervised Learning (SSL) model to classify [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist/tree/master?tab=readme-ov-file) dataset into 10 different classes using only up to 10% of the label data. In the following a visualization of the data:
+Deliverable
+The final output should be a GitHub repository containing:
+- The complete code
+- A README.md file explaining how to install, run and visualize results
+
+The assignment shouldn’t take more than 8 hours to complete.
+
+This repository trains a Self Supervised Learning (SSL) model to classify [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist/tree/master?tab=readme-ov-file) dataset into 10 different classes using only up to 10% of the label data. In the following, a visualization of the data:
 
 ![alt text](https://github.com/BerardinoB/MomentumHealth/blob/main/Images/fashionMNIST.png)
 
