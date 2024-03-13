@@ -8,6 +8,7 @@ The final output should be a GitHub repository containing:
 
 The assignment shouldn’t take more than 8 hours to complete.
 
+**Solution**
 This repository trains a Self Supervised Learning (SSL) model to classify [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist/tree/master?tab=readme-ov-file) dataset into 10 different classes using only up to 10% of the label data. In the following, a visualization of the data:
 
 ![alt text](https://github.com/BerardinoB/MomentumHealth/blob/main/Images/fashionMNIST.png)
